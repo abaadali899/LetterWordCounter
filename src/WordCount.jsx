@@ -5,7 +5,7 @@ function WordCount() {
 	const [text, setText] = 
 		useState(""); 
 	const wordCount = text 
-		.split(/\s+/) 
+		.split(/\s+/).filter(Boolean)
 		.length; 
 	const letterCount = text.length; 
 
@@ -24,6 +24,7 @@ function WordCount() {
 			/> 
 			<p> 
 				Word Count: 
+        {""}
 				{wordCount} 
 			</p> 
 			<p> 
