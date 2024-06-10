@@ -6,7 +6,7 @@ function WordCount() {
 		useState(""); 
 	const wordCount = text 
 		.split(/\s+/) 
-		.filter(Boolean).length; 
+		.length; 
 	const letterCount = text.length; 
 
 	const handleTextChange = (e) => { 
